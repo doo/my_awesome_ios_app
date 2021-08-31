@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		28ED1B1126DE79CC00115757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28ED1B0F26DE79CC00115757 /* Main.storyboard */; };
 		28ED1B1326DE79CE00115757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28ED1B1226DE79CE00115757 /* Assets.xcassets */; };
 		28ED1B1626DE79CE00115757 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28ED1B1426DE79CE00115757 /* LaunchScreen.storyboard */; };
+		28ED1B1F26DE7A4E00115757 /* ScanbotSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 28ED1B1E26DE7A4E00115757 /* ScanbotSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28ED1B1F26DE7A4E00115757 /* ScanbotSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = MyAwesomeIOSApp;
+			packageProductDependencies = (
+				28ED1B1E26DE7A4E00115757 /* ScanbotSDK */,
+			);
 			productName = MyAwesomeIOSApp;
 			productReference = 28ED1B0626DE79CC00115757 /* MyAwesomeIOSApp.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +115,9 @@
 				Base,
 			);
 			mainGroup = 28ED1AFD26DE79CC00115757;
+			packageReferences = (
+				28ED1B1D26DE7A4E00115757 /* XCRemoteSwiftPackageReference "scanbot-sdk-ios-spm" */,
+			);
 			productRefGroup = 28ED1B0726DE79CC00115757 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		28ED1B1D26DE7A4E00115757 /* XCRemoteSwiftPackageReference "scanbot-sdk-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:doo/scanbot-sdk-ios-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.20.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		28ED1B1E26DE7A4E00115757 /* ScanbotSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28ED1B1D26DE7A4E00115757 /* XCRemoteSwiftPackageReference "scanbot-sdk-ios-spm" */;
+			productName = ScanbotSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 28ED1AFE26DE79CC00115757 /* Project object */;
 }
