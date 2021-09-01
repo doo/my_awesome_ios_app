@@ -14,7 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        ScanbotSDK.setLicense("See the license key notes below!")
+//        Uncomment this line if you have a license.
+//        ScanbotSDK.setLicense("See the license key notes below!")
         return true
     }
 
